@@ -36,7 +36,7 @@ get perimeter() {
 
 get area () {
     let p = (this.a + this.b + this.c) / 2;
-    let ar = Math.round(1000 * Math.sqrt(p * (p - this.a) * (p - this.b) * (p - this.c)) + Number.EPSILON) / 1000;
+    let ar = Math.round(1000 * Math.sqrt(p * (p - this.a) * (p - this.b) * (p - this.c))) / 1000;
     return ar;
     }
 }
